@@ -1,0 +1,14 @@
+{
+  "name": "scoped-events",
+  "repo": "notablemind/scoped-events",
+  "description": "Events object with children that bubble up, applying modifiers",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}

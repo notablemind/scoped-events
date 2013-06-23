@@ -1,0 +1,31 @@
+{
+  "name": "scoped-events",
+  "version": "0.0.1",
+  "description": "Scoped events",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "chai": "~1.7.0",
+    "mocha": "*"
+  },
+  "dependencies": {},
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/notablemind/scoped-events.git"
+  },
+  "keywords": [
+    "events",
+    "event",
+    "emit",
+    "on",
+    "scoped"
+  ],
+  "author": "Jared Forsyth <jared@jaredforsyth.com>",
+  "license": "MIT",
+  "readmeFilename": "Readme.md"
+}
