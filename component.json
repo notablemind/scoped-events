@@ -4,7 +4,9 @@
   "description": "Events object with children that bubble up, applying modifiers",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "simov/deep-copy": "*"
+  },
   "development": {},
   "license": "MIT",
   "main": "index.js",

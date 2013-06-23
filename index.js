@@ -1,25 +1,12 @@
 
-function copy(obj) {
-  var nw = {};
-  for (var key in obj) {
-    if (!obj.hasOwnProperty(key)) continue;
-    if (obj instanceof Array) {
-      nw[key] = obj[key].slice();
-    } else if (typeof(obj) == 'object') {
-      nw[key] = copy(obj[key]);
-    } else {
-      nw[key] = obj[key];
-    }
-  }
-  return nw;
-}
+var copy = require('deep-copy');
 
-var EventManager = function EventManager(parent) {
+var ScopedEvents = function ScopedEvents(parent) {
   this.listeners = {};
   this.parentEmit = parent || null;
 };
 
-EventManager.prototype = {
+ScopedEvents.prototype = {
 
   on: function (type, fn) {
     if (!this.listeners[type]) this.listeners[type] = [];
@@ -67,10 +54,10 @@ EventManager.prototype = {
     if (typeof options === 'function') {
       options = {all: options};
     }
-    return new EventManager(this.childEmitter(options));
+    return new ScopedEvents(this.childEmitter(options));
   }
 
 };
       
-module.exports = EventManager;
+module.exports = ScopedEvents;
 

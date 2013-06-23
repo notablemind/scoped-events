@@ -10,7 +10,9 @@
     "chai": "~1.7.0",
     "mocha": "*"
   },
-  "dependencies": {},
+  "dependencies": {
+    "deep-copy": "~1.0.0"
+  },
   "scripts": {
     "test": "make test"
   },
