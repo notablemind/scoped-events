@@ -2,7 +2,7 @@
   "name": "scoped-events",
   "repo": "notablemind/scoped-events",
   "description": "Events object with children that bubble up, applying modifiers",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "keywords": [],
   "dependencies": {
     "simov/deep-copy": "*"
